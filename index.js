@@ -25,12 +25,19 @@ exports.handler = async (event) => {
   if (event.pacienteId) {
     pacienteEncontrado = buscarPaciente(event.pacienteId);
     pacienteEncontrado.idade = calcularIdade(pacienteEncontrado)
+  
+    return {
+      statusCode: 200,
+      body: JSON.stringify(pacienteEncontrado);
+    }
   }
 
-  const response = {
+  const todosPacientes = pacientes.map(p => ({
+    ...p, idade: calcularIdade(p)
+  }));
+
+  return {
     statusCode: 200,
-    body: JSON.stringify(pacienteEcontrado)
+    body: JSON.stringify(todosPacientes)
   }
-
-  return response;
 }

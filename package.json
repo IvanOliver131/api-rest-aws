@@ -1,0 +1,23 @@
+{
+  "name": "api-rest-aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanOliver131/api-rest-aws.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanOliver131/api-rest-aws/issues"
+  },
+  "homepage": "https://github.com/IvanOliver131/api-rest-aws#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
